@@ -1,0 +1,27 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Navbar.master.cs" Inherits="ProjectLab.Views.Navbar" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:Button ID="home_Button" runat="server" Text="Home" OnClick="home_Button_Click" />
+        <asp:Button ID="orderRamen_Button" runat="server" Text="Order Ramen" Visible ="false" OnClick="orderRamen_Button_Click"/>
+        <asp:Button ID="manageRamen_Button" runat="server" Text="Manage Ramen" Visible ="false" onclick="manageRamen_Button_Click"/>
+        <asp:Button ID="orderQueue_Button" runat="server" Text="Order Queue" Visible ="false" OnClick="orderQueue_Button_Click"/>
+        <asp:Button ID="history_Button" runat="server" Text="History" Visible ="false" OnClick="history_Button_Click"/>
+        <asp:Button ID="profile_Button" runat="server" Text="Profile" Visible ="false" OnClick="profile_Button_Click"/>
+        <asp:Button ID="report_Button" runat="server" Text="Report" Visible ="false" OnClick="report_Button_Click"/>
+        <asp:Button ID="logout_Button" runat="server" Text="Log Out" Visible ="true" OnClick="logout_Button_Click"/>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
